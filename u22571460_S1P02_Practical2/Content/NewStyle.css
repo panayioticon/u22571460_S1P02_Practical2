@@ -1,0 +1,82 @@
+﻿body{
+    background-color:mediumseagreen;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin:10px;
+}
+nav {
+    background-color: black;
+    padding: 0;
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap;
+    margin:10px;
+}
+nav a {
+        padding: 5px 10px;
+        margin: 0;
+        text-decoration: none;
+        color: white;
+        border-right: 3px solid white;
+}
+nav a:hover{
+    background-color: grey;
+}
+nav a:active{
+    color:green;
+}
+div {
+    background-color: palegreen ;
+    width: 80%;
+    border:3px solid green;
+    
+}
+.sect {
+    background-color: white; 
+    border: 3px solid green;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%; 
+    overflow: hidden;
+}
+.sect h2, .sect h3, .sect h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.bioimg {
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+}
+.bioimg:hover{
+    transform: scaleX(-1);
+}
+.sect p {
+    word-break: break-word
+}
+.hobbyimg {
+    float: right;
+    margin-left: 15px;
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+}
+.hobbyimg:hover{
+    transform: scaleX(-1);
+}
+
+table{
+    margin: 10px;
+}
+th{
+    padding: 20px;
+}
+td{
+    text-align:center;
+}

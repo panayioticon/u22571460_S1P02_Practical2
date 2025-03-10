@@ -1,0 +1,31 @@
+﻿@model IEnumerable<u22571460_S1P02_Practical2.Models.GroupMember>
+@{
+    ViewBag.Title = "ListOfMembers";
+}
+<head><link href="../Content/MainPage.css" rel="stylesheet"/></head>
+<body>
+<h2>List Of Members</h2>
+<table class="people">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.StudentNumber) </th>
+        <th>@Html.DisplayNameFor(model => model.Name) </th>
+        <th>@Html.DisplayNameFor(model => model.Surname) </th>
+        <th>@Html.DisplayNameFor(model => model.EmailAddress) </th>
+        <th>@Html.DisplayNameFor(model => model.myLink) </th>
+    </tr>
+
+
+
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(item => i.StudentNumber) </td>
+            <td>@Html.DisplayFor(item => i.Name) </td>
+            <td>@Html.DisplayFor(item => i.Surname) </td>
+            <td>@Html.DisplayFor(item => i.EmailAddress) </td>
+            <td id="links"><a href="@Url.Content(i.myLink)">LINK</a></td>
+        </tr>
+
+    }
+</table>
+</body>
